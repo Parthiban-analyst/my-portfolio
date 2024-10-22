@@ -1,0 +1,145 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Name.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+        <div class="header-text">
+            <p>Business Analyst</p>
+            <h1>Hi,I'm <span>Parthiban</span> <br> from theni</h1>
+        </div>
+    </div>
+    </div>
+<!---------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/photo-output.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Qliksense | Qlik NPrinting | Qlikview | Power BI | SQL Developer</p>
+                <br>
+                <p>I am a Qlik Sense Business Intelligence Developer with extensive 
+                    experience in developing and maintaining Qlik Sense applications. 
+                    Currently, I am working at Gain-Insights solutions, where I have been responsible for developing 
+                    new apps and maintaining existing ones within the Tata communication ecosystem.
+                    My role involves transposing complex business requirements into 
+                    Qlik Sense dashboards, managing the ETL processes, and customizing 
+                    data to meet specific business needs.</p>
+                <br>
+                <p>Before Gain-Insights, I worked at Wisvalour Technology solutions as a Qlik Sense Business 
+                    Intelligence Developer, where I gathered and translated complex business 
+                    requirements into optimal and scalable data models and visualizations and managed data creation, 
+                    updates, and reloading tasks. In my previous roles, I served as a Technical 
+                    Qlik Sense Business Analyst at PTC for over two years, where I designed apps, 
+                    created visualizations, and tested and validated data and apps in collaboration 
+                    with various departments.</p>
+<br>
+<br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                            <div class="float1">
+                                    <ul><li> <span><b> Skills</b></span></li>
+                                    <li> Critical Thinking</li>
+                                    <li> Analytic Reasoning</li>
+                                    <li> Decision Making</li>
+                                    <li> Problem Solving Skills</li>
+                                    <li> Communication</li></ul>
+                            </div>
+                            
+                            <div class="float2">
+                                   <ul> <li><span><b> Known Tools</b></span></li> 
+                                    <li> QlikSense</li>
+                                    <li> NPrinting</li>
+                                    <li> Qlik Saas</li>
+                                    <li> Qlikview</li>
+                                    <li> Power BI</li>
+                                    <li> Tableau</li>
+                                    <li> SQL</li>  </ul>  
+                            </div>
+                            
+                    </div>
+                    <div class="tab-contents" id="experience">
+                                    <ul><li> <span><b> Oct 2023 - Present (Present 1 yrs)</b></span></li>
+                                    <li> Consultant at Gain-Insights</li><br>
+                                    <ul><li> <span><b> Aug 2021 - Sep 2023 (2 Yrs 2 mos)</b></span></li>
+                                        <li> Technical Consultant at Wisvalour Technology Solutions</li>
+                            
+                    </div>
+                    <div class="tab-contents" id="education">
+                                    <ul><li> <span><b> 2017 - 2021 </b></span></li>
+                                    <li> BE-CSE from Kamaraj College of Engineering and Technology with 70%.</li>
+                                    <ul><li> <span><b> 2017</b></span></li>
+                                    <li> 12th from N.S Boys School with 70%.</li>
+                                    <ul><li> <span><b> 2015</b></span></li>
+                                        <li> 10th from N.S Boys School with 94.5%.</li>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------Portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_0842.jpeg" >
+            </div>
+            <div class="work">
+                    <img src="images/Cert.jpeg" >
+            </div>
+                
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>
