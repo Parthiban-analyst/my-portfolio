@@ -11,7 +11,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="./assets/images/Name.png" class="logo">
+            <img src="images/Name.png" class="logo">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -20,7 +20,7 @@
         </nav>
         <div class="header-text">
             <p>Business Analyst</p>
-            <h1>Hi,I'm <span>Parthiban</span> <br> from theni</h1>
+            <h1>Hi,I'm <span>Parthiban</span></h1>
         </div>
     </div>
     </div>
@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="./assets/images/photo-output.jpeg">
+                <img src="images/photo-output.jpeg">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About me</h1>
@@ -50,14 +50,14 @@
                     Qlik Sense Business Analyst at PTC for over two years, where I designed apps, 
                     created visualizations, and tested and validated data and apps in collaboration 
                     with various departments.</p>
-<br>
-<br>
+
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link">Skills</p>
+                        <p class="tab-links">Experience</p>
+                        <p class="tab-links">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents">
+
                             <div class="float1">
                                     <ul><li> <span><b> Skills</b></span></li>
                                     <li> Critical Thinking</li>
@@ -79,67 +79,27 @@
                             </div>
                             
                     </div>
-                    <div class="tab-contents" id="experience">
-                                    <ul><li> <span><b> Oct 2023 - Present (Present 1 yrs)</b></span></li>
-                                    <li> Consultant at Gain-Insights</li><br>
-                                    <ul><li> <span><b> Aug 2021 - Sep 2023 (2 Yrs 2 mos)</b></span></li>
-                                        <li> Technical Consultant at Wisvalour Technology Solutions</li>
+                    <div class="tab-contents">
+                                    <ul><li> <span><b> Skills</b></span></li>
+                                    <li> Critical Thinking</li>
+                                    <li> Analytic Reasoning</li>
+                                    <li> Decision Making</li>
+                                    <li> Problem Solving Skills</li>
+                                    <li> Communication</li></ul>
                             
                     </div>
-                    <div class="tab-contents" id="education">
-                                    <ul><li> <span><b> 2017 - 2021 </b></span></li>
-                                    <li> BE-CSE from Kamaraj College of Engineering and Technology with 70%.</li>
-                                    <ul><li> <span><b> 2017</b></span></li>
-                                    <li> 12th from N.S Boys School with 70%.</li>
-                                    <ul><li> <span><b> 2015</b></span></li>
-                                        <li> 10th from N.S Boys School with 94.5%.</li>
-                    </div>
+                    <div class="tab-contents">
+                            <ul><li> <span><b> Skills</b></span></li>
+                            <li> Critical Thinking</li>
+                            <li> Analytic Reasoning</li>
+                            <li> Decision Making</li>
+                            <li> Problem Solving Skills</li>
+                            <li> Communication</li></ul>
                     
             </div>
+            </div>
         </div>
     </div>
 </div>
-<!---------------Portfolio---------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Achievements</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="./assets/images/IMG_0842.jpeg" >
-            </div>
-            <div class="work">
-                    <img src="./assets/images/Cert.jpeg" >
-            </div>
-                
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-<script>
-
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for (tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-
 </body>
 </html>
