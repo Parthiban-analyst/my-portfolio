@@ -58,7 +58,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background: #0c0c0c;
+    background: #000000;
     border-left: 2px solid #FC6D6D;
     animation: typing 3s steps(10) infinite;
   }
